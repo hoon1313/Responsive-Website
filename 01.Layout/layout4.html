@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #FFE082;
+            height: 100px;
+            width: 100%;
+        }
+
+        article {
+            background-color: #FFD54F;
+            height: 300px;
+            width: 100%;
+        }
+
+        section {
+            background-color: #FFCA28;
+            width: 80%;
+            padding: 10%;
+            overflow: hidden;
+        }
+
+        section>div {
+            width: 18%;
+            margin: 1%;
+            height: 170px;
+            background-color: #FF9800;
+            float: left;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        footer {
+            height: 100px;
+            width: 100%;
+            background-color: #FFB300;
+        }
+
+        /* 화면 너비 0 ~ 1200px */
+
+        @media (max-width : 1220px) {
+            #wrap {
+                width: 100%;
+            }
+
+            section>div {
+                width: 23%;
+            }
+
+            section>div:nth-child(5n) {
+                display: none;
+            }
+        }
+
+        /* 화면 너비 0 ~ 768px */
+        @media (max-width: 768px) {
+            section>div {
+                width: 31.3333%;
+            }
+
+            section>div:nth-child(5) {
+                display: block;
+
+            }
+
+        }
+
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px) {
+            section>div {
+                width: 48%;
+            }
+
+            section>div:nth-child(5n) {
+                display: block;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <article></article>
+        <section>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
