@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/* 반응형 이미지  */
+img {
+    width: 100%;
+}
+
 /* 여백 초기화 */
 
 html,
@@ -145,6 +150,8 @@ em,
 address {
     font-style: normal;
 }
+
+
 
 /* IR 효과 */
 /* 1. 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
